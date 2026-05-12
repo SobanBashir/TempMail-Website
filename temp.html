@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temp Mail - Free Temporary Email</title>
+
+<link rel="stylesheet" href="temp.css">
+
+</head>
+<body>
+   
+
+ <div class="main-navbar">
+
+  <!-- Left Logo -->
+ <div class="nav-logo" onclick="goHome()">Temp Mail<br>Service</div>
+
+  <!-- Right Settings -->
+ <div class="nav-right">
+  <button class="nav-settings-btn" onclick="toggleSettings()">⚙️</button>
+
+  <!-- Settings Panel -->
+  <div id="settingsPanel" class="settings-panel">
+    <div class="settings-item" onclick="openSavedPage()">💾 Saved Emails</div>
+  </div>
+ </div>
+
+ </div>
+
+
+
+
+  <!-- <button class="settings-btn" onclick="openSavedPage()">⚙️ Settings</button> -->
+ <div class="main-content">
+ <div class="container">
+  <h1>📧 Temp Mail<br>Service</h1>
+  <p>Use our temporary email generator to receive OTPs and avoid spam.</p> 
+
+  <button onclick="generateEmail()">Generate Email</button>
+
+ <div id="emailBox" style="display:flex; justify-content:space-between; align-items:center; background:#1e293b; padding:10px; border-radius:5px;">
+   <span id="emailText">Loading email...</span>
+      <div class="copybutton">
+       <button id="copyBtn" onclick="copyEmail()" disabled style="font-size:18px; cursor:pointer;">
+       📋
+       </button>
+       
+      </div>
+ </div>
+   <button onclick="saveEmail()">💾 Save Email</button>
+ <!-- Empty state -->
+ <div id="inboxBox" class="empty-box">
+  <div id="emptyState">
+    <div class="icon">📩</div>
+    <h2>Your inbox is empty</h2>
+    <p>Waiting for incoming emails</p>
+  </div>
+  <div id="messages"></div>
+ </div>
+ </div>
+
+ <div class="temppage-emptybox-p">
+   <h2>What is Disposable Temporary E-mail?</h2>
+   <p>
+    Disposable email - is a free email service that allows to receive email at a temporary address that<br>
+    self-destructed after a certain time elapses. It is also known by names like : tempmail, 10minutemail,<br>
+    10minmail, throwaway email, fake-mail , fake email generator, burner mail or trash-mail. Many forums,<br>
+    Wi-Fi owners, websites and blogs ask visitors to register before they can view content, post comments<br>
+    or download something. Temp-Mail - is most advanced throwaway email service that helps you avoid<br>
+    spam and stay safe.
+   </p>
+ </div>
+ 
+ <section class="home-about scroll-animate">
+  <div class="home-about-box">
+
+    <h2 class="home-about-title">What is Temp Mail?</h2>
+
+    <p class="home-about-text">
+      Temp Mail, also known as temporary email, is a service that provides you with a disposable email address for a short period of time. It allows users to receive emails, verification codes, and OTPs without using their personal email address. This helps protect your privacy and keeps your main inbox safe from spam and unwanted messages.
+    </p>
+
+    <p class="home-about-text">
+      When you sign up on different websites or apps, using your real email can lead to spam and security risks. Temp Mail solves this by giving you a random email that expires automatically. Our service is fast, secure, and easy to use, making it perfect for quick registrations and online privacy.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="how-works scroll-animate">
+  <div class="how-works-box">
+
+    <h2 class="how-title">How It Works</h2>
+
+    <div class="how-steps">
+
+      <div class="how-step">
+        <span class="step-number">1</span>
+        <h3>Generate Email</h3>
+        <p>Click the generate button to instantly create a temporary email address.</p>
+      </div>
+
+      <div class="how-step">
+        <span class="step-number">2</span>
+        <h3>Use Anywhere</h3>
+        <p>Use this email on any website or app where email verification is required.</p>
+      </div>
+
+      <div class="how-step">
+        <span class="step-number">3</span>
+        <h3>Receive Messages</h3>
+        <p>Get OTPs, verification codes, and emails directly in your inbox.</p>
+      </div>
+
+      <div class="how-step">
+        <span class="step-number">4</span>
+        <h3>Stay Secure</h3>
+        <p>Your temporary email expires automatically, keeping your data safe.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="saved-works scroll-animate">
+  <div class="saved-box">
+
+    <h2 class="saved-title">Saved Emails</h2>
+
+    <div class="saved-steps">
+
+      <div class="saved-step">
+        <span class="saved-number">1</span>
+        <h3>Save Email</h3>
+        <p>Click the save button to store your generated email for later use.</p>
+      </div>
+
+      <div class="saved-step">
+        <span class="saved-number">2</span>
+        <h3>Access Anytime</h3>
+        <p>Open the settings panel and go to saved emails to view all stored addresses.</p>
+      </div>
+
+      <div class="saved-step">
+        <span class="saved-number">3</span>
+        <h3>Reuse Email</h3>
+        <p>Select any saved email to receive new messages and OTPs again.</p>
+      </div>
+
+      <div class="saved-step">
+        <span class="saved-number">4</span>
+        <h3>Manage Easily</h3>
+        <p>You can open, copy, or delete saved emails anytime with one click.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="why-use scroll-animate">
+  <div class="why-box">
+
+    <h2 class="why-title">Why Use Temp Mail?</h2>
+
+    <div class="why-cards">
+
+      <div class="why-card">
+        <h3>🔒 Protect Privacy</h3>
+        <p>Keep your personal email safe from unknown websites and avoid sharing your real identity online.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>🚫 Avoid Spam</h3>
+        <p>Stop unwanted emails, ads, and newsletters from filling your main inbox.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>⚡ Instant Access</h3>
+        <p>Get OTPs and verification codes instantly without any signup or delay.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>🧹 Clean Inbox</h3>
+        <p>Your temporary emails expire automatically, keeping everything clean and organized.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="faq-section">
+  <div class="faq-box">
+
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">What is a temporary email?</button>
+      <div class="faq-answer">
+        <p>A temporary email is a disposable email address that you can use for a short time to receive messages without using your personal email.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is this service free to use?</button>
+      <div class="faq-answer">
+        <p>Yes, our Temp Mail service is completely free and does not require any registration.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How long do emails stay in the inbox?</button>
+      <div class="faq-answer">
+        <p>Emails are temporary and may be deleted automatically after a certain period for privacy and security reasons.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I reuse a saved email?</button>
+      <div class="faq-answer">
+        <p>Yes, you can save an email and reuse it later to receive messages again.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is my data safe?</button>
+      <div class="faq-answer">
+        <p>We do not store personal data. Temporary emails are not linked to your identity, ensuring your privacy.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER CODE -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <h2>📧 Temp Mail</h2>
+
+    <div class="footer-links">
+      <a href="temp.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+
+    <p>© 2026 Temp Mail. All rights reserved.</p>
+
+  </div>
+</footer>
+
+
+<script src="temp.js"></script>
+
+</body>
+</html>

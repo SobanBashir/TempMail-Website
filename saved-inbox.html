@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Saved Inbox</title>
+  <link rel="stylesheet" href="saved-inbox.css">
+</head>
+<body>
+
+<div class="saved-inbox-container">
+
+  <!-- Email Box -->
+  <div class="saved-email-box">
+    <span id="emailText"></span>
+    <button onclick="copyEmail()">📋 Copy</button>
+  </div>
+
+  <!-- Inbox Box -->
+  <div class="saved-inbox-box">
+    <!-- <h3>Inbox</h3> -->
+    <div id="messages"></div>
+    <div id="emptyState"><h2>Your inbox is empty</h2>
+    <p>Waiting for incoming emails</p></div>
+  </div>
+
+  <!-- Back Button -->
+  <button class="saved-back-btn" onclick="goBack()">⬅ Back</button>
+
+</div>
+
+<script src="saved-inbox.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Temp Mail</title>
+  <link rel="stylesheet" href="contact.css">
+  <!-- <link rel="stylesheet" href="temp.css"> -->
+</head>
+<body>
+
+    <div class="contact-container">
+     <!-- Header -->
+     <div class="contact-header">
+     CONTACT US - TEMP MAIL
+     </div>
+
+     <!-- Content -->
+     <div class="contact-content">
+     <p>
+      If the answers to common questions and a detailed description on the home page about the 
+      <b>Temp Mail service</b> do not assist you let us know. Only from your feedback can we provide 
+      solutions for other users.
+     </p>
+
+     <p>
+      If required we will consult with you at any time of the day. We will help to efficiently manage 
+      services on offer, to solve problems you may experience in receiving emails in the unlikely event 
+      they occur.
+     </p>
+
+     <!-- Form -->
+     <form id="contact-form" onsubmit="contactValidateForm(event)">
+     <div class="contact-form">
+      <input type="text" id="contact-name" placeholder="Name" class="contact-input">
+      <select id="contact-reason" class="contact-input">
+      <option value="">Select reason</option>
+      <option>Support</option>
+      <option>Bug</option>
+      <option>Feedback</option>
+      </select>
+
+      <input type="email" id="contact-email" placeholder="E-mail" class="contact-input">
+
+      <textarea id="contact-message" placeholder="Message" class="contact-textarea"></textarea>
+
+      <!-- Error -->
+      <div id="contact-error" class="contact-error"></div>
+     </div>
+      <button id="contact-submit" onclick="contactValidateForm(event)">
+        Send
+      </button>
+     </form>
+     </div>
+    </div>
+
+ 
+
+    <!-- FOOTER CODE -->
+<footer class="contact-footer">
+  <div class="contact-footer-container">
+    
+    <h2>📧 Temp Mail</h2>
+
+    <div class="contact-footer-links">
+      <a href="temp.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+
+    <p>© 2026 Temp Mail. All rights reserved.</p>
+
+  </div>
+</footer>
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+ <script>
+ (function(){
+  emailjs.init("bC66DQp84xp2BECuK"); // <-- yahan apna Public Key daalo
+ })();
+ </script>
+
+  <script src="contact.js"></script>
+
+</body>
+</html>

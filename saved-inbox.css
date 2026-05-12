@@ -1,0 +1,87 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* Background */
+.saved-inbox-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Email Box */
+.saved-email-box {
+  background: #111827;
+  color: white;
+
+  padding: 12px 15px;
+  border-radius: 10px;
+  width: 350px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Inbox Box */
+.saved-inbox-box {
+  background: #111827;
+  color: white;
+
+  padding: 15px;
+  border-radius: 10px;
+  width: 350px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* .saved-inbox-box h3 {
+  margin-bottom: 10px;
+} */
+
+/* Messages */
+#messages div {
+  padding: 8px;
+  border-bottom: 1px solid #334155;
+  cursor: pointer;
+}
+
+#messages div:hover {
+  background: #1e293b;
+}
+
+/* Empty state */
+#emptyState {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+.saved-email-box button{
+    cursor: pointer;
+}
+
+/* Back Button */
+.saved-back-btn {
+  width: 350px;
+  padding: 10px;
+
+  background: #334155;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.saved-back-btn:hover {
+  background: #475569;
+}
