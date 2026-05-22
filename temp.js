@@ -30,7 +30,7 @@ let seenMessages = new Set();
 
 
 function goHome() {
-  window.location.href = "temp.html";
+  window.location.href = "index.html";
 }
 
 
