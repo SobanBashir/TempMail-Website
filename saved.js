@@ -46,7 +46,7 @@ function deleteEmail(index) {
 }
 
 function goHome() {
-  window.location.href = "temp.html";
+  window.location.href = "index.html";
 }
 
 loadSavedEmails();
